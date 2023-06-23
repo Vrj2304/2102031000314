@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<book_store>
+<book>rich dad poor dad
+<price>300</price>
+<author>robert kiyosaki</author>
+<launched>april 2000</launched>
+<publisher>warner books</publisher>
+<genre>public finance</genre>
+</book>
+<book>the god of small things
+<price>250</price>
+<author>arundhati roy</author>
+<launched>march 1997</launched>
+<publisher>random house of usa and canada</publisher>
+<genre>novel</genre>
+</book>
+<book>the white tiger
+<price>500</price>
+<author>arvind adiga</author>
+<launched>2008</launched>
+<publisher>atlantic books</publisher>
+<genre>picaresque novel</genre>
+</book>
+<book>a suitable boy
+<price>150</price>
+<author>vikram sath</author>
+<launched>may 1993</launched>
+<publisher>harpercollins</publisher>
+<genre>novel</genre>
+</book>
+<book>the inheritance of loss
+<price>1000</price>
+<author>kiran desai</author>
+<launched>aug 2006</launched>
+<publisher>atlantic monthly press</publisher>
+<genre>novel</genre>
+</book>
+</book_store>
