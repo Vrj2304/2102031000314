@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>types of operators</title>
+        <style>
+            body{
+                background-color: aqua;
+                color:black;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Types of operators</h1>
+<h2>1.Arithmetic operators</h2>
+<h4>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</h4>
+
+<p id="demo"></p>
+
+<script>
+let a = 3;
+let x = (100 + 50) * a;
+document.getElementById("demo").innerHTML = x;
+</script>
+<h2>2.Assignment operator</h2>
+<h4>The += Operator</h4>
+
+<p id="apple"></p>
+
+<script>
+var v = 10;
+v += 5;
+document.getElementById("apple").innerHTML = v;
+</script>
+<h2>3.String operator</h2>
+<h4>All conditional operators can be used on both numbers and strings.</h4>
+
+<p id="name"></p>
+
+<script>
+let text1 = "c";
+let text2 = "d";
+let result = text1 < text2;
+document.getElementById("name").innerHTML = "Is c less than d? " + result;
+</script>
+<h2>4.Logical operator</h2>
+<h4>The == Operator</h4>
+
+<p>Assign 5 to z, and display the value of the comparison (z == 8):</p>
+
+<p id="abc"></p>
+
+<script>
+let z = 5;
+document.getElementById("abc").innerHTML = (z == 8);
+</script>
+<h2>5.Type operator</h2>
+<h4>The Number() Method</h4>
+
+<p>The Number() metod converts a variable (or value) into a number:</p>
+
+<p id="vraj"></p>
+
+<script>
+document.getElementById("vraj").innerHTML =
+Number("3.14") + "<br>" +
+Number(Math.PI) + "<br>" +
+Number("    ") + "<br>" +
+Number("") + "<br>" +
+Number("99 88") + "<br>" +
+Number("John") + "<br>";
+</script>
+<h2>6.Bitwise operator</h2>
+<h4>The & Operator</h4>
+
+<p id="arawe"></p>
+
+<script>
+document.getElementById("arawe").innerHTML = 5 & 1;
+</script>
+</body>
+</html>
