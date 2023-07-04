@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("textarea").focus(function(){
+    $(this).css("background-color", "orange");
+  });
+  $("textarea").blur(function(){
+    $(this).css("background-color", "blue");
+  });
+});
+</script>
+</head>
+<body>
+
+<textarea></textarea><br>
+<textarea></textarea>
+
+</body>
+</html>
