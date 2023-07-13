@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Feedback Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-image: url(bg_4.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: larger;
+    }
+    
+    h1 {
+      text-align: center;
+      color: green ;
+    }
+    
+    .form-container {
+      max-width: 550px;
+      margin: 0 auto;
+      background-color: gray;
+      padding: 50px;
+      border-radius: 5px;
+    }
+    
+    .form-container label {
+      display: block;
+      margin-bottom: 10px;
+      color: green;
+    
+    }
+    
+    .form-container input[type="text"],
+    .form-container textarea,
+    .form-container input[type="number"] {
+      width: 500px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+
+    select{
+      width: 500px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc; 
+    }
+    .rating{
+      float: left;
+    }
+    .rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 25px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+
+    button {
+  --c:  green; /* the color*/
+  
+  box-shadow: 0 0 0 .1em inset var(--c); 
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: 
+    var(--_g) calc(var(--_p,0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p,0%)) 0%,
+    var(--_g) calc(var(--_p,0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p,0%)) 100%;
+  background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+  outline-offset: .1em;
+  transition: background-size .4s, background-position 0s .4s;
+  width: 140px;
+  height: 50px;
+  font-size: 25px;
+}
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+button:active {
+  box-shadow: 0 0 9e9q inset #0009; 
+  background-color: var(--c);
+  color: #fff;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Hotel Feedback Form</h1>
+  <div class="form-container">
+    <form>
+      <label for="name" class="fa fa-user"> Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email" class="fa fa-envelope"> Email:</label>
+      <input type="text" id="email" name="email" required><br><br>
+
+      <label for="number" class="fa fa-phone"> Phone no:</label>
+      <input type="number" id="number" name="number" maxlength="10" required><br><br>
+      
+      <label for="ratingfood" class="fa fa-cutlery"> Food Rating:</label>
+      <select id="ratingfood" name="ratingfood" required>
+        <option value="">-- Select Rating --</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="average">Average</option>
+        <option value="poor">Poor</option>
+      </select><br><br>
+      
+      <label for="rating" class="fa fa-tasks"> Service:</label>
+      <div class="rating">
+        <input type="radio" id="star5" name="rate" value="5">
+        <label for="star5" title="text"></label>
+        <input type="radio" id="star4" name="rate" value="4">
+        <label for="star4" title="text"></label>
+        <input checked="" type="radio" id="star3" name="rate" value="3">
+        <label for="star3" title="text"></label>
+        <input type="radio" id="star2" name="rate" value="2">
+        <label for="star2" title="text"></label>
+        <input type="radio" id="star1" name="rate" value="1">
+        <label for="star1" title="text"></label>
+      </div><br><br><br>
+
+      <label for="comments" class="fa fa-comment"> Feedback:</label>
+      <textarea id="comments" name="comments" rows="5" required></textarea><br><br> 
+      <center>
+      <button>Submit</button>
+    </center>
+    </form>
+  </div>
+</body>
+</html
